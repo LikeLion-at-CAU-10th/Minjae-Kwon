@@ -1,0 +1,30 @@
+/* COMMON */
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+/* HEADER */
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 20px;
+  background-color: black;
+  display: flex;
+}
+header .logo {
+  font-size: 30px;
+}
+header .icons {
+   color: #fff;
+   position: absolute;
+   right: 60px;
+}
+header .icons .material-icons {
+  margin-right: 10px;
+  cursor: pointer;
+}
+header .icons .material-icons:last-child {
+  margin-right: 0;
+}
