@@ -1,0 +1,28 @@
+.items {
+  position: relative;
+  top: 70px;
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+.items li {
+  margin-right: 20px;
+}
+.items li .item__picture img {
+  width: 300px;
+  height: 300px;
+}
+.items li a {
+  color: black;
+}
+.items li .item__brand {
+  text-decoration: underline;
+  font-weight: 700;
+  margin: 10px 0;
+}
+.items li .item__name {
+  font-size: 14px;
+}
+.items li .item__name:hover {
+  text-decoration: underline;
+}

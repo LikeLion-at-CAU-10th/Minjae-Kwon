@@ -1,0 +1,114 @@
+.main {
+  position: absolute;
+  width: 100%;
+  top: 70px;
+  display: flex;
+  justify-content: center;
+}
+.main .main-picture,
+.main .description {
+  width: 500px;
+  height: 500px;
+  margin-top: 30px;
+}
+.main .main-picture {
+  margin-right: 30px;
+}
+.main .description {
+  
+}
+.main .description .title {
+  width: 100%;
+  border-top: 3px solid black;
+  padding: 30px 0;
+  box-sizing: border-box;
+  font-size: 20px;
+  font-weight: 900;
+}
+.main .description .price-group {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 30px;
+}
+.main .description .price {
+  font-size: 20px;
+  font-weight: 700;
+  
+}
+.main .description .coupon {
+  background-color: black;
+  padding: 10px;
+  color: #fff;
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+}
+.main .description .coupon .material-icons {
+  font-size: 15px;
+  margin-left: 10px;
+}
+
+.main .description .item-option {
+  padding: 30px 0;
+  border-top: 1px solid lightgray;
+}
+.main .description .item-option h3 {
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.main .description .item-option ul {
+  display: flex;
+}
+.main .description .item-option ul li {
+  margin-right: 20px;
+}
+
+.main .description .delivery {
+  padding: 30px 0;
+  border-top: 1px solid lightgray;
+
+}
+.main .description .delivery h3 {
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.main .description .delivery .delivery__info {
+  display: flex;
+}
+.main .description .delivery .delivery__info .info__title {
+  width: 20%;
+  color: rgb(93,93,93);
+}
+.main .description .delivery .delivery__info .info__content {
+
+}
+.main .description .delivery .delivery__info .info__content p {
+  margin-bottom: 10px;
+}
+.main .description .delivery .delivery__info .info__content p:last-child {
+  margin-bottom: 20px;
+}
+
+.main .description .purchase-group {
+  display: flex;
+  width: 100%;
+  border: 1px solid lightgrey;
+  margin-top: 5%;
+}
+.main .description .purchase-group .purchase,
+.main .description .purchase-group .shopping-bag {
+  width: 50%;
+  padding: 10px;
+  text-align: center;
+}
+.main .description .purchase-group .shopping-bag {
+  color: black;
+}
+.main .description .purchase-group .purchase {
+  background-color: black;
+  color: #fff;
+}
+.main .description .purchase-group .purchase:hover {
+  background-color: brown;
+}
