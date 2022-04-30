@@ -258,6 +258,7 @@ header ul.menu li:hover {
 .contact .contact__logo {
   font-size: 50px;
   margin-right: 3%;
+  color: black;
 }
 .contact .contact__logo:last-child {
   margin-right: 0;

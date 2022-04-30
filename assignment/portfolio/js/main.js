@@ -23,3 +23,24 @@ function toggleClick() {
   contact.classList.toggle('dark');
   skills.classList.toggle('dark');
 }
+
+const goToAbout = document.querySelector('#about');
+const goToSkills = document.querySelector('#skills');
+const goToProjects = document.querySelector('#projects');
+const goToContact = document.querySelector('#contact');
+
+goToAbout.addEventListener('click', function () {
+  gsap.to(window, .7, {
+    scrollTo: 500
+  });
+});
+goToSkills.addEventListener('click', function () {
+  gsap.to(window, .7, {
+    scrollTo: 1050
+  });
+});
+goToContact.addEventListener('click', function () {
+  gsap.to(window, .7, {
+    scrollTo: 1050
+  });
+});
