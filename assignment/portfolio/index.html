@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="./css/style.css">
+
+  <!-- GOOGLE FONT -->
+  <link rel="preconnect" href="https://fonts.googleapis.com"> 
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400&display=swap" rel="stylesheet">
+
+  <script defer src="./js/youtube.js"></script>
+  
+  <!-- FONT AWESOME -->
+  <script src="https://kit.fontawesome.com/f7f78a655c.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css"/>
+
+  <!-- SCROLL -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js" integrity="sha512-8E3KZoPoZCD+1dgfqhPbejQBnQfBXe8FuwL4z/c8sTrgeDMFEnoyTlH3obB4/fV+6Sg0a0XF+L/6xS4Xx1fUEg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  
+  <!-- TYPING -->
+  <script src="https://unpkg.com/typeit@8.5.3/dist/index.umd.js"></script>
+
+  <script defer src="./js/main.js"></script>
+
+  <title>MJ's Portfolio</title>
+</head>
+<body>
+  <header>
+    <div class="inner">
+      <a href="" class="logo">Kwon Min Jae<br><span>Front-end Developer<span></a>
+      <ul class="menu">
+        <li>ABOUT</li>
+        <li>SKILLS</li>
+        <li>PROJECTS</li>
+        <li>CONTACT</li>
+      </ul>
+    </div>
+    <input type="checkbox" class="checkbox" id="checkbox">
+    <label for="checkbox" class="label">
+      <i class="fas fa-moon"></i>
+      <i class="fas fa-sun"></i>
+      <div class="ball"></div>
+    </label>
+  </header>
+
+
+
+  <div class="youtube">
+    <div class="youtube__area">
+      <div id="player"></div>
+    </div>
+    <div class="youtube__cover">
+      <span id="welcome"></span>
+      <span class="description">Front-end Developer Kwon Min Jae</span>
+    </div>
+  </div>
+
+
+
+
+  <section class="about-me">
+    <h2 class="title">
+      About me <br>
+      <br><span>안녕하세요! 웹 프론트엔드 개발자 권민재입니다.<br>개발을 통해 세상에 가치를 전하고 싶습니다.</span>
+    </h2>
+    <div class="title__contents">
+      <img src="./images/profile.jpeg" alt="" width="30%" height="30%">
+      <div class="profile">
+        <h3>Profile</h3>
+        <div class="profile__contents">
+          <ul class="name">
+            <li>NAME</li>
+            <li>AGES</li>
+            <li>EMAIL</li>
+            <li>PHONE</li>
+            <li>ADDRESS</li>
+            <li>EDUCATION</li>
+          </ul>
+          <ul class="content">
+            <li>권민재</li>
+            <li>26(1997.03.10)</li>
+            <li>kkmj4034@gmail.com</li>
+            <li>010-9831-4034</li>
+            <li>서울특별시 동작구</li>
+            <li>중앙대학교 국제물류/SW벤처</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="skills">
+    <h2>SKILLS</h2>
+    <ul class="skillset">
+      <li>
+        <h3>HTML</h3>
+        <div class="container">
+          <div class="value html__value"></div>
+          <span>90%</span>
+        </div>
+      </li>
+      <li>
+        <h3>CSS</h3>
+        <div class="container">
+          <div class="value css__value"></div>
+          <span>80%</span>
+        </div>
+      </li>
+      <li>
+        <h3>JS</h3>
+        <div class="container">
+          <div class="value js__value"></div>
+          <span>20%</span>
+        </div>
+      </li>
+      <li>
+        <h3>PYTHON</h3>
+        <div class="container">
+          <div class="value python__value"></div>
+          <span>10%</span>
+        </div>
+      </li>
+    </ul>
+  </section>
+
+
+
+  <!-- CONTACT -->
+  <section class="contact">
+    <h2>CONTACT</h2>
+    <span>kkmj4034@gmail.com</span><br><br>
+    <span>010-9831-4034</span><br><br>
+    <a href="https://github.com/kmj4034" class="contact__logo">
+      <i class="fa-brands fa-instagram"></i>
+    </a>
+    <a href="https://www.instagram.com/kwonminjaeda/" class="contact__logo">
+      <i class="fa-brands fa-github"></i>
+    </a>
+  </section>
+</body>
+</html>

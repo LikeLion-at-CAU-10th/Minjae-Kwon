@@ -1,0 +1,288 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  position: relative;
+  background-color: #fafafa;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+a {
+  text-decoration: none;
+}
+.inner {
+  width: 1000px;
+  margin: 0 auto;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.on {
+  opacity: 1;
+}
+
+
+/* HEADER */
+header {
+  /* opacity: 0; */
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  background-color: #fafafa;
+  padding: 15px 0;
+  color: black;
+}
+header .logo {
+  color: black;
+  font-weight: 900;
+  font-size: 25px;
+  letter-spacing: .1em;
+}
+header .logo span {
+  font-size: 15px;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  margin-top: 8%;
+}
+header ul.menu {
+  display: flex;
+}
+header ul.menu li {
+  margin-left: 30px;
+  opacity: .6;
+}
+header ul.menu li:hover {
+  cursor: pointer;
+  opacity: 1;
+}
+
+.checkbox {
+  display: none;
+  /* position: absolute; */
+}
+.label {
+  position: absolute;
+  top: 10%;
+  right: 5%;
+  z-index: 9;
+  width: 70px;
+  height: 35px;
+  background-color: black;
+  border-radius: 50px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.label .fas {
+  font-size: 25px;
+}
+.label .fa-moon {
+  color: #f1c40f;
+}
+.label .fa-sun {
+  color: #f39c12;
+}
+.label .ball {
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  background-color: #fff;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+.checkbox:checked+.label .ball {
+  transform: translateX(34px);
+}
+
+
+
+/* YOUTUBE */
+.youtube {
+  position: relative;
+  background-color: aquamarine;
+}
+.youtube__area {
+  width: 100vw;
+}
+.youtube__area::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 0;
+  padding-top: 55.5%;
+}
+#player {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.youtube__cover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+.youtube__cover #welcome {
+  font-size: 50px;
+  font-weight: 700;
+  position: absolute;
+  bottom: 10%;
+  left: 5%;
+}
+.youtube__cover .description {
+  position: absolute;
+  left: 5%;
+  bottom: 7%;
+}
+
+
+
+/* ABOUT ME */
+.about-me {
+  padding: 5% 0;
+}
+.about-me .title {
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 5%;
+  font-weight: 700;
+}
+.about-me .title span {
+  font-size: 20px;
+  font-weight: 500;
+}
+.about-me .title__contents {
+  display: flex;
+  justify-content: center;
+}
+.about-me .title__contents img {
+  margin-right: 5%;
+}
+.about-me .title__contents .profile {
+  width: 40%;
+}
+.about-me .title__contents .profile h3 {
+  font-size: 30px;
+  font-weight: 700;
+}
+.about-me .title__contents .profile__contents {
+  display: flex;
+  margin-top: 5%;
+}
+.about-me .title__contents .profile__contents .name {
+  font-size: 20px;
+  margin-right: 10%;
+  font-weight: 700;
+}
+.about-me .title__contents .profile__contents .content{
+  font-size: 20px;
+}
+.about-me .title__contents .profile__contents .name li {
+  margin-bottom: 21.5%;
+} 
+.about-me .title__contents .profile__contents .content li {
+  margin-bottom: 10%;
+}
+
+
+
+/* SKILLS */
+.skills {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 5%;
+}
+.skills h2 {
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 3%;
+  font-weight: 700;
+}
+.skills .skillset {
+  
+}
+
+.skills .skillset li h3 {
+  font-weight: 900;
+}
+.skills .skillset li .container {
+  height: 20px;
+  width: 60vw;
+  background-color: #e0e0e0;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 3%;
+}
+.skills .skillset li .container span {
+  margin-right: 1%;
+}
+.skills .skillset li .container .value {
+  height: 100%;
+  background-color: #ffd740;
+}
+.skills .skillset li .container .html__value {
+  width: 90%;
+}
+.skills .skillset li .container .css__value {
+  width: 80%;
+}
+.skills .skillset li .container .js__value {
+  width: 20%;
+}
+.skills .skillset li .container .python__value {
+  width: 10%;
+}
+
+
+
+/* CONTACT */
+.contact {
+  background-color: #e3f2fd;
+  padding: 5%;
+  margin-top: 5%;
+  text-align: center;
+}
+.contact h2 {
+  font-size: 30px;
+  margin-bottom: 3%;
+  font-weight: 700;
+}
+.contact>span {
+  font-size: 20px;
+}
+.contact .contact__logo {
+  font-size: 50px;
+  margin-right: 3%;
+}
+.contact .contact__logo:last-child {
+  margin-right: 0;
+}
+
+
+/* DARK MODE */
+header.dark {
+  background-color: #424242;
+  color: #fff;
+}
+header.dark .logo {
+  color: #fff;
+}
+body.dark {
+  background-color: #424242;
+  color: #fff;
+}
+.skills.dark .skillset .container span {
+  color: black;
+}
+.contact.dark {
+  background-color: #1a237e;
+}
+.contact.dark .contact__logo {
+  color: #fff;
+}

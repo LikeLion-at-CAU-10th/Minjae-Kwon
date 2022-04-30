@@ -1,0 +1,56 @@
+body {
+  background-color: #fff;
+  margin: 100px;
+}
+
+
+
+.layout-container {
+  display: flex;
+  width: 800px;
+  height: 600px;
+  background-color: black;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.layout-container .layout-title {
+  display: flex; 
+  justify-content: center;
+  flex-basis: 13%;
+}
+.layout-container .layout-title .title {
+  background-color: red;
+  width: 97%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.layout-container .layout-recent {
+  display: flex;
+  justify-content: space-evenly;
+  flex-basis: 28%;
+}
+.layout-container .layout-recent .recent {
+  background-color: yellow;
+  flex-basis: 23%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.layout-container .layout-popular {
+  display: flex;
+  justify-content: space-evenly;
+  flex-basis: 53%;
+}
+.layout-container .layout-popular .popular {
+  background-color: green;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.layout-container .layout-popular .popular1 {
+  flex-basis: 72%;
+}
+.layout-container .layout-popular .popular2 {
+  flex-basis: 22%;
+}

@@ -1,0 +1,120 @@
+.wrapper {
+  height: 100vh;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  box-sizing: border-box;
+}
+.section1 {
+  flex-grow: 1;
+  background-color: royalblue;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+.section1 .block {
+  background-color: aliceblue;
+}
+.section1 .block1 {
+  flex-grow: 1;
+  margin-right: 10px;
+}
+.section1 .block2 {
+  flex-grow: 4;
+}
+.section2 {
+  flex-grow: 1;
+  background-color: aqua;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+.section2 .block {
+  background-color: blanchedalmond;
+  margin-right: 10px;
+}
+.section2 .block3 {
+  flex-grow: 1;
+}
+.section2 .block4 {
+  flex-grow: 1;
+}
+.section2 .block5 {
+  flex-grow: 1;
+  margin-right: 0;
+}
+.section3 {
+  flex-grow: 2.5;
+  background-color: pink;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+.section3 .block {
+  background-color: cornflowerblue;
+}
+.section3 .block6 {
+  flex-grow: 2;
+  margin-right: 10px;
+}
+.section3 .block7 {
+  flex-grow: 3;
+}
+.section4 {
+  flex-grow: 2.5;
+  background-color: beige;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+.section4 .block {
+  background-color: crimson;
+}
+.section4 .block8 {
+  flex-grow: 3;
+  margin-right: 10px;
+}
+.section4 .block9 {
+  flex-grow: 2;
+}
+.section5 {
+  flex-grow: 4;
+  background-color: darkseagreen;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+.section5 .block {
+  background-color: chartreuse;
+}
+.section5 .block10 {
+  flex-grow: 2;
+  margin-right: 10px;
+}
+.section5 .block11-13 {
+  flex-grow: 3;
+  display: flex;
+  flex-direction: column;
+}
+.section5 .block11-13 .block11{
+  flex-grow: 1;
+}
+.section5 .block11-13 .block12-13 {
+  flex-grow: 1;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+.section5 .block11-13 .block12-13 .block12,
+.section5 .block11-13 .block12-13 .block13 {
+  background-color: yellow;
+}
+.section5 .block11-13 .block12-13 .block12 {
+  flex-grow: 1;
+  margin-right: 10px;
+}
+.section5 .block11-13 .block12-13 .block13 {
+  flex-grow: 1;
+}
