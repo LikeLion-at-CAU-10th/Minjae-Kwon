@@ -1,0 +1,7 @@
+h1 {
+  cursor: pointer;
+  transition: 0.8s;
+}
+h1:hover {
+  transform: scale(1.5);
+}
