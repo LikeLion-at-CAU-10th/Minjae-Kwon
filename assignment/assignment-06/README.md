@@ -50,3 +50,4 @@
 19. corsheaders 등록 및 corsheaders 관련 미들웨어 추가
 <img width="462" alt="스크린샷 2022-05-25 오후 4 52 50" src="https://user-images.githubusercontent.com/68986630/170210482-3653310d-ec0a-4969-b214-dd934086af54.png">
 20. 2022.05.25 기준 cors 에러를 해결하지 못했습니다 ㅠ 구글링해서 해결 예정입니다.
+![cors](https://github.com/LikeLion-at-CAU-10th/Minjae-Kwon/blob/main/assignment/assignment-06/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202022-05-25%20%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE%205.01.57.png)
