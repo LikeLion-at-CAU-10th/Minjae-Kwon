@@ -2,6 +2,8 @@ import 냉면 from "./images/냉면.jpeg";
 import 콩국수 from "./images/콩국수.jpeg";
 import 화채 from "./images/화채.jpeg";
 import styled from "styled-components";
+import LikeButton from "./LikeButton";
+import { useState } from "react";
 
 const Container = styled.div`
   display: flex;
@@ -39,9 +41,10 @@ function Boxes() {
   return (
     <Container>
       {images.map((image, index) => (
-        <Box image={image}>
+        <Box key={index} image={image}>
           <TextBox>
             <span>{[texts[index]]}</span>
+            <LikeButton buttonIndex={index} len={images.length} />
           </TextBox>
         </Box>
       ))}
