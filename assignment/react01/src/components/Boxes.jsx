@@ -1,9 +1,7 @@
-import 냉면 from "./images/냉면.jpeg";
-import 콩국수 from "./images/콩국수.jpeg";
-import 화채 from "./images/화채.jpeg";
 import styled from "styled-components";
 import LikeButton from "./LikeButton";
-import { useState } from "react";
+import { dummy } from "../dummy";
+import { Link } from "react-router-dom";
 
 const Container = styled.div`
   display: flex;
@@ -22,11 +20,25 @@ const Box = styled.div`
     margin-right: 0;
   }
   display: flex;
-  align-items: end;
+  flex-direction: column;
+  justify-content: end;
+`;
+const BoxLink = styled(Link)`
+  display: block;
+  background-color: #d9d9d9;
+  width: 100%;
+  text-align: center;
+  text-decoration: none;
+  color: inherit;
+  padding: 5px 0;
+  :hover {
+    background-color: #c9c9c9;
+    font-weight: bold;
+  }
 `;
 const TextBox = styled.div`
   background-color: rgb(47, 62, 81, 0.8);
-  padding: 25px;
+  padding: 20px 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -35,17 +47,17 @@ const TextBox = styled.div`
 `;
 
 function Boxes() {
-  const images = [냉면, 콩국수, 화채];
-  const texts = ["새콤달콤 냉면", "고소한 콩국수", "달달한 화채"];
-
   return (
     <Container>
-      {images.map((image, index) => (
-        <Box key={index} image={image}>
+      {dummy.map((el, index) => (
+        <Box key={el.id} image={el.image}>
           <TextBox>
-            <span>{[texts[index]]}</span>
-            <LikeButton buttonIndex={index} len={images.length} />
+            <span>{el.desc}</span>
+            <LikeButton buttonIndex={index} len={dummy.length} />
           </TextBox>
+          <BoxLink to={`/${el.id}`} state={{ item: el }}>
+            상세페이지로 이동
+          </BoxLink>
         </Box>
       ))}
     </Container>

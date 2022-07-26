@@ -11,6 +11,10 @@ const Button = styled.button`
   border: 0;
   background-color: transparent;
   color: red;
+  :hover {
+    cursor: pointer;
+    transform: scale(1.2);
+  }
 `;
 
 function LikeButton({ buttonIndex, len }) {
