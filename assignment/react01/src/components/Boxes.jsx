@@ -2,6 +2,11 @@ import styled from "styled-components";
 import LikeButton from "./LikeButton";
 import { dummy } from "../dummy";
 import { Link } from "react-router-dom";
+import axios from "axios";
+import { useEffect, useState } from "react";
+import 냉면 from "../images/냉면.jpeg";
+import 콩국수 from "../images/콩국수.jpeg";
+import 화채 from "../images/화채.jpeg";
 
 const Container = styled.div`
   display: flex;
@@ -47,19 +52,41 @@ const TextBox = styled.div`
 `;
 
 function Boxes() {
+  const [items, setItems] = useState();
+  const [isLoading, setIsloading] = useState(true);
+  const getItems = async () => {
+    const res = await axios.get(
+      "https://75934015-08c9-4e35-a6e5-3adf0777844c.mock.pstmn.io/items"
+    );
+    const data = await res.data;
+    setItems(data);
+    setIsloading(false);
+  };
+  useEffect(() => {
+    getItems();
+  }, []);
+
+  const images = [냉면, 콩국수, 화채];
+
   return (
     <Container>
-      {dummy.map((el, index) => (
-        <Box key={el.id} image={el.image}>
-          <TextBox>
-            <span>{el.desc}</span>
-            <LikeButton buttonIndex={index} len={dummy.length} />
-          </TextBox>
-          <BoxLink to={`/${el.id}`} state={{ item: el }}>
-            상세페이지로 이동
-          </BoxLink>
-        </Box>
-      ))}
+      {isLoading ? (
+        <div>Loading...</div>
+      ) : (
+        <>
+          {items.map((el, index) => (
+            <Box key={el.id} image={images[index]}>
+              <TextBox>
+                <span>{el.desc}</span>
+                <LikeButton buttonIndex={index} len={dummy.length} />
+              </TextBox>
+              <BoxLink to={`/${el.id}`} state={{ item: el }}>
+                상세페이지로 이동
+              </BoxLink>
+            </Box>
+          ))}
+        </>
+      )}
     </Container>
   );
 }
